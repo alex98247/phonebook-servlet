@@ -1,0 +1,73 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        version="3.0"
+        metadata-complete="false">
+
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>jersey-serlvet</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.classnames</param-name>
+            <param-value>com.digdes.school.phonebook.jaxrs.PersonRestController</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jersey-serlvet</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>convert-servlet</servlet-name>
+        <servlet-class>com.digdes.school.phonebook.servlet.ConvertServlet</servlet-class>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>person-servlet</servlet-name>
+        <servlet-class>com.digdes.school.phonebook.servlet.PersonServlet</servlet-class>
+    </servlet>
+
+    <!--  <servlet>
+        <servlet-name>personList-servlet</servlet-name>
+        <servlet-class>com.digdes.school.phonebook.servlet.PersonListServlet</servlet-class>
+      </servlet>-->
+    <servlet>
+        <servlet-name>personListPage-servlet</servlet-name>
+        <servlet-class>com.digdes.school.phonebook.servlet.PagePersonList</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>convert-servlet</servlet-name>
+        <url-pattern>/convert</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>person-servlet</servlet-name>
+        <url-pattern>/person</url-pattern>
+    </servlet-mapping>
+
+    <!--  <servlet-mapping>
+        <servlet-name>personList-servlet</servlet-name>
+        <url-pattern>/personList</url-pattern>
+      </servlet-mapping>-->
+
+    <servlet-mapping>
+        <servlet-name>personListPage-servlet</servlet-name>
+        <url-pattern>/page/personList</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+</web-app>
