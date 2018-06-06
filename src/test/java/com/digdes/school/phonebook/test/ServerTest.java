@@ -1,25 +1,20 @@
 package com.digdes.school.phonebook.test;
 
-
-import org.apache.jasper.servlet.JspServlet;
-import org.eclipse.jetty.annotations.AnnotationConfiguration;
-import org.eclipse.jetty.jsp.JettyJspServlet;
-import org.eclipse.jetty.plus.webapp.EnvConfiguration;
-import org.eclipse.jetty.plus.webapp.PlusConfiguration;
 import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.servlet.DefaultServlet;
-import org.eclipse.jetty.servlet.ServletContextHandler;
-import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.webapp.*;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.DataOutputStream;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.net.URLConnection;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
-@Ignore
 public class ServerTest {
 
     public static final String WEBAPP_RESOURCES_LOCATION = "src/main/webapp";
@@ -28,6 +23,25 @@ public class ServerTest {
     private static Logger LOGGER = LoggerFactory.getLogger(ServerTest.class);
 
     @Test
+    public void testConverter(){
+        try {
+            URL url = new URL("localhost:8085/convert");
+            URLConnection con = url.openConnection();
+            HttpURLConnection http = (HttpURLConnection) con;
+            http.setRequestMethod("POST");
+            http.setDoOutput(true);
+
+            DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+            Path path = Paths.get("/Users/Alex/Desktop/person.dbf");
+            byte[] data = Files.readAllBytes(path);
+            wr.write(data);
+            wr.flush();
+            wr.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
     public void start() throws Exception {
         LOGGER.info("Starting jetty...");
         Server server = new Server(START_PORT);

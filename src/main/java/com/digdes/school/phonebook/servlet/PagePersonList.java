@@ -16,6 +16,6 @@ public class PagePersonList extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Person> list = PersonServiceImpl.getInstance().list();
         req.setAttribute("personList", list);
-        req.getRequestDispatcher("/WEB-INF/jsp/person_list_jstl.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/person_list.jsp").forward(req, resp);
     }
 }

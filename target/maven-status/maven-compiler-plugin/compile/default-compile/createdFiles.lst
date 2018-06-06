@@ -1,0 +1,14 @@
+com/digdes/school/phonebook/model/Person$Cols.class
+com/digdes/school/phonebook/jaxrs/PersonRestController.class
+com/digdes/school/phonebook/model/Person.class
+com/digdes/school/phonebook/jaxrs/PersonListRestController.class
+com/digdes/school/phonebook/servlet/PersonListServlet.class
+com/digdes/school/phonebook/servlet/ConvertServlet.class
+com/digdes/school/phonebook/jaxrs/ConvertRestController.class
+com/digdes/school/phonebook/service/PersonServiceImpl.class
+com/digdes/school/phonebook/helper/Config.class
+com/digdes/school/phonebook/servlet/PersonServlet.class
+com/digdes/school/phonebook/helper/Main.class
+com/digdes/school/phonebook/service/PersonService.class
+com/digdes/school/phonebook/jaxrs/PagesRest.class
+com/digdes/school/phonebook/servlet/PagePersonList.class

@@ -1,0 +1,131 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="phonebook-servlet:war exploded">
+    <output-path>$PROJECT_DIR$/target/phonebook-servlet</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="phonebook-servlet" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: javax.el:el-api:2.2" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.1" />
+          <element id="library" level="project" name="Maven: com.github.albfernandez:javadbf:1.9.2" />
+          <element id="library" level="project" name="Maven: com.opencsv:opencsv:4.0" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.6" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-text:1.1" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.3" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:1.3.2" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.5" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-server:2.25" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-common:2.25" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.25" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-client:2.25" />
+          <element id="library" level="project" name="Maven: javax.ws.rs:javax.ws.rs-api:2.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.media:jersey-media-jaxb:2.25" />
+          <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-api:2.5.0-b30" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-utils:2.5.0-b30" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.5.0-b30" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2.external:javax.inject:2.5.0-b30" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-locator:2.5.0-b30" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.20.0-GA" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.media:jersey-media-multipart:2.17" />
+          <element id="library" level="project" name="Maven: org.jvnet.mimepull:mimepull:1.9.3" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet-core:2.25" />
+          <element id="library" level="project" name="Maven: com.owlike:genson:1.4" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-servlet:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-security:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-server:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-http:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-io:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-webapp:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-xml:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-annotations:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm:6.1.1" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm-commons:6.1.1" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm-tree:6.1.1" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm-analysis:6.1.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.ext:jersey-mvc:2.5.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.4" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-plus:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-jndi:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:apache-jsp:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-util:9.4.10.v20180503" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty.toolchain:jetty-schemas:3.1" />
+          <element id="library" level="project" name="Maven: org.mortbay.jasper:apache-jsp:8.5.24.2" />
+          <element id="library" level="project" name="Maven: org.mortbay.jasper:apache-el:8.5.24.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.jdt:ecj:3.12.3" />
+          <element id="library" level="project" name="Maven: junit:junit:4.12" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-jdk14:1.7.5" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.5" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:jsp-impl:2.2.2-b06" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:javax.el:2.2.6" />
+          <element id="library" level="project" name="Maven: javax.el:javax.el-api:2.2.5" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:el-impl:2.2.1-b05" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:jstl-impl:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2" />
+          <element id="library" level="project" name="Maven: io.swagger:swagger-core:1.5.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-joda:2.4.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.4.2" />
+          <element id="library" level="project" name="Maven: joda-time:joda-time:2.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.4.2" />
+          <element id="library" level="project" name="Maven: io.swagger:swagger-models:1.5.0" />
+          <element id="library" level="project" name="Maven: io.swagger:swagger-annotations:1.5.0" />
+          <element id="library" level="project" name="Maven: com.wordnik:swagger-jaxrs_2.10:1.3.2" />
+          <element id="library" level="project" name="Maven: org.scala-lang:scala-library:2.10.0" />
+          <element id="library" level="project" name="Maven: com.wordnik:swagger-core_2.10:1.3.2" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-scala_2.10:2.1.5" />
+          <element id="library" level="project" name="Maven: com.thoughtworks.paranamer:paranamer:2.3" />
+          <element id="library" level="project" name="Maven: org.scala-lang:scala-reflect:2.10.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jsonSchema:2.1.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.0.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.0.0" />
+          <element id="library" level="project" name="Maven: com.wordnik:swagger-annotations:1.3.2" />
+          <element id="library" level="project" name="Maven: org.json4s:json4s-ext_2.10:3.2.4" />
+          <element id="library" level="project" name="Maven: org.joda:joda-convert:1.2" />
+          <element id="library" level="project" name="Maven: org.json4s:json4s-native_2.10:3.2.4" />
+          <element id="library" level="project" name="Maven: org.json4s:json4s-core_2.10:3.2.4" />
+          <element id="library" level="project" name="Maven: org.json4s:json4s-ast_2.10:3.2.4" />
+          <element id="library" level="project" name="Maven: org.scala-lang:scalap:2.10.0" />
+          <element id="library" level="project" name="Maven: org.scala-lang:scala-compiler:2.10.0" />
+          <element id="library" level="project" name="Maven: org.json4s:json4s-jackson_2.10:3.2.4" />
+          <element id="library" level="project" name="Maven: org.reflections:reflections:0.9.8" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:11.0.2" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:1.3.9" />
+          <element id="library" level="project" name="Maven: javassist:javassist:3.12.1.GA" />
+          <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
+          <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
+          <element id="library" level="project" name="Maven: org.apache.maven.plugins:maven-deploy-plugin:2.7" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-api:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-project:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-settings:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-profile:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact-manager:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-repository-metadata:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven.wagon:wagon-provider-api:1.0-beta-2" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-registry:2.0.6" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1" />
+          <element id="library" level="project" name="Maven: classworlds:classworlds:1.1-alpha-2" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-model:2.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact:2.0.6" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-utils:1.5.6" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/phonebook-servlet/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="phonebook-servlet/web/Web" />
+    </root>
+  </artifact>
+</component>

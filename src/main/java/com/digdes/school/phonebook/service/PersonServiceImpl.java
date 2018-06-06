@@ -75,8 +75,37 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
+    public void delete(Long id){
+        try( Reader reader = Files.newBufferedReader(Paths.get(getStorePath()));
+            FileWriter fileWriter = new FileWriter(getStorePath())) {
+
+            CsvToBean<Person> csvToBean = new CsvToBeanBuilder<Person>(reader)
+                    .withType(Person.class)
+                    .withIgnoreLeadingWhiteSpace(true)
+                    .build();
+            StatefulBeanToCsv<Person> beanToCsv = new StatefulBeanToCsvBuilder<Person>(fileWriter)
+                         .withQuotechar(CSVWriter.NO_QUOTE_CHARACTER)
+                         .build();
+            List<Person> persons = csvToBean.parse();
+            Optional<Person> person = persons.stream().filter(p -> Objects.equals(p.getId(), id)).collect(Collectors.reducing((a, b) -> null));
+            persons.remove(person);
+            beanToCsv.write(persons);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (CsvRequiredFieldEmptyException e) {
+        e.printStackTrace();
+    }
+        catch (CsvDataTypeMismatchException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
     public Person get(Long id) {
-        try( Reader reader = Files.newBufferedReader(Paths.get(getStorePath()))) {
+        try( Reader reader = Files.newBufferedReader(Paths.get(getStorePath()));
+                FileWriter fileWriter = new FileWriter(getStorePath())) {
             CsvToBean<Person> csvToBean = new CsvToBeanBuilder<Person>(reader)
                     .withType(Person.class)
                     .withIgnoreLeadingWhiteSpace(true)
